@@ -2,28 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <div id="container">
-      <h1 id="title">Survey Form</h1>
-      <p id="description">This is a survey form</p>
+      <h1 id="title">Participants survey</h1>
+      <p id="description">Raymond survey form</p>
 
       <form action="submit" id="survey-form">
         <label for="name" id="name-label">
           <p>Name</p>
-          <input type="text" id="name" name="name" placeholder="Enter your Name">
+          <input type="text" id="name" name="name" placeholder="Enter your Name" required>
         </label>
-        <label for="email">
+        <label for="email" id="email-label">
           <p>Email</p>
           <input type="email" name="email" id="email" required placeholder="Enter your Email">
         </label>
-        <label for="number">
+        <label for="number" id="number-label">
           <p>Number</p>
-          <input type="number" name="number" min="10" max="75" placeholder="Enter your age">
+          <input type="number" id="number" name="number" min="10" max="75" placeholder="Enter your age">
         </label>
+        <select name="dropdown" id="dropdown">
+          <option disabled selected value="What is your gender">What is your gender</option>
+          <option value="male">Male</option>
+          <option value="male">Female</option>
+        </select>
+        <p>Do you like our new course?</p>
+        <label for="courseRadio_1" class="courseRadio">
+          <input type="radio" name="courseRadio" id="courseRadio_1" value="yes">
+          <p>Yes</p>
+        </label>
+        <label for="courseRadio_2" class="courseRadio">
+          <input type="radio" name="courseRadio" id="courseRadio_2" value="no">
+          <p>No</p>
+        </label>
+        <label for="courseRadio_3" class="courseRadio">
+          <input type="radio" name="courseRadio" id="courseRadio_3" value="maybe">
+          <p>Not sure</p>
+        </label>
+        <div id="chechboxDiv">
+          <p>Select you favourite Instructors</p>
+          <label for="mathew" class="checkboxLabel">
+            <input type="checkbox" name="mathew" value="mathew" id="mathew">
+            Mathew
+          </label>
+          <label for="mark" class="checkboxLabel">
+            <input type="checkbox" name="mark" value="mark" id="mark">
+            Mark
+          </label>
+          <label for="luke" class="checkboxLabel">
+            <input type="checkbox" name="luke" value="luke" id="luke">
+            Luke
+          </label>
+          <label for="john" class="checkboxLabel">
+            <input type="checkbox" name="john" value="john" id="john">
+            John
+          </label>
+        </div>
+        <textarea name="" id="" placeholder="Additional Details"></textarea>
+        <button id="submit" type="submit">SUBMIT</button>
       </form>
     </div>
 
