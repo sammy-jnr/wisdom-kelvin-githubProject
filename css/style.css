@@ -17,12 +17,11 @@
 }
 #description,#title{
   text-align: center;
+  margin: 10px 0;
 }
-#title{
-  
-}
+
 #description{
-  font-size: 25px;
+  font-size: 22px;
 }
 form{
   background-color: #3c0457d6;
@@ -89,6 +88,7 @@ textarea{
   border-radius: 30px;
   font-weight: 600;
   color: #eeeeee;
+  font-size: 16px;
 }
 .checkboxLabel{
   display: flex;
