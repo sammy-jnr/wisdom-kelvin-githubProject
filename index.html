@@ -7,13 +7,21 @@
   </head>
 
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">This is a survey form</p>
+    <div id="container">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">This is a survey form</p>
 
-    <form action="submit" id="survey-form">
-      <label for="name" id="name-label">name:</label>
-      <input type="text" id="name" name="name">
-    </form>
+      <form action="submit" id="survey-form">
+        <label for="name" id="name-label">
+          <p>Name</p>
+          <input type="text" id="name" name="name" placeholder="Enter your Name">
+        </label>
+        <label for="email">
+          <p>Email</p>
+          <input type="email" name="email" id="email" required placeholder="Enter your Email">
+        </label>
+      </form>
+    </div>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
